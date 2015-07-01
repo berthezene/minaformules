@@ -1,0 +1,23 @@
+<!--Vue 3-->
+
+<ion-view>
+  <ion-nav-title>
+    {{formule.name}}
+  </ion-nav-title>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-star" ng-click="toggleFav()"></button>
+  </ion-nav-buttons>
+  <ion-content padding="true">
+    <h1 class="formule titre-{{formule.matiere[0]}}">{{formule.name}}</h1>
+
+    <br>
+    <div id="formule" mathjax-bind="{{formule.formule}}"></div>
+    <br/>
+    <div id="description" mathjax-bind="{{formule.description}}"></div>
+
+  </ion-content>
+
+  <div class="bar bar-footer bar-calm" ng-click="reportError()">
+    <h1 class="title">Signaler une erreur</h1>
+  </div>
+</ion-view>

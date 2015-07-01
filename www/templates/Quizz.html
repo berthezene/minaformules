@@ -1,0 +1,41 @@
+<!--Vue9-->
+
+<ion-view view-title="Quizz" hide-back-button="true">
+    <ion-nav-buttons side="left">
+     <button menu-toggle="left" class="button button-icon icon ion-navicon button-clear"></button>
+    </ion-nav-buttons>
+
+
+  <ion-content>
+		<div class="container">
+			<div class="item item-image">
+				<img class="image_matiere" src="img/Quizz-icon.png"/>
+			</div>
+			<br/>
+			<div class="row row-center">
+				<div ng-repeat="sup in sups" class="col col-20 col-sup" ng-class="{'col-offset-19':$first}">
+					<label class="button button_sup" ng-class="{'classes-checked':sup.isChecked}"><img ng-src="img/{{sup.shortname}}.png" />
+						<input type="checkbox" ng-model="sup.isChecked" id="{{sup.shortname}}"></input>
+						<div class="track">
+							<div class="handle"></div>
+						</div>
+					</label>
+				</div>
+			</div>
+			<div class="row row-center">
+				<div ng-repeat="spe in spes" class="col col-20 col-spe padding_2" ng-class="{'col-offset-8-5':$first}">
+					<label class="button button_spe" ng-class="{'classes-checked':spe.isChecked}"><img ng-src="img/{{spe.shortname}}.png" />
+						<input type="checkbox" ng-model="spe.isChecked"  id="{{spe.shortname}}"></input>
+						<div class="track">
+							<div class="handle"></div>
+						</div>
+					</label>
+				</div>
+			</div>
+			<div ng-repeat="matiere in matieres" class="col col-50 col-matiere">
+				<a class="button button-matiere button_{{matiere.shortname}}" ng-click="goto(matiere)"><img ng-src="img/{{matiere.shortname}}.png" /></a>
+			</div>
+			<div class="last-div">End of View</div>
+		</div>
+  </ion-content>
+</ion-view>

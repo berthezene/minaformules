@@ -1,0 +1,55 @@
+<!--Vue 6-->
+
+<ion-view view-title="Favoris">
+  <ion-content>
+	<div class="item item-image">
+		<img class="image_matiere" ng-src="img/favoris-icon.png"/>
+	</div>
+	<br/>
+	<ul class="list">
+      <div class="item item-divider item-math" ng-show="maths.length">
+        Mathématiques
+      </div>
+      <a class="item item-icon-right item-M" ng-repeat="formule in maths | orderBy: 'name'" href="#/app/formule/{{formule.id}}">
+        {{formule.name}}
+        <i class="icon ion-chevron-right"></i>
+      </a>
+
+      <div class="item item-divider item-phys" ng-show="phys.length">
+        Physique
+      </div>
+      <a class="item item-icon-right item-P" ng-repeat="formule in phys | orderBy: 'name'" href="#/app/formule/{{formule.id}}">
+        {{formule.name}}
+        <i class="icon ion-chevron-right"></i>
+      </a>
+
+      <div class="item item-divider item-chim" ng-show="chimie.length">
+        Chimie
+      </div>
+      <a class="item item-icon-right item-C" ng-repeat="formule in chimie | orderBy: 'name'" href="#/app/formule/{{formule.id}}">
+        {{formule.name}}
+        <i class="icon ion-chevron-right"></i>
+      </a>
+
+      <div class="item item-divider item-si" ng-show="SI.length">
+        Sciences de l'ingénieur
+      </div>
+      <a class="item item-icon-right item-S" ng-repeat="formule in SI | orderBy: 'name'" href="#/app/formule/{{formule.id}}">
+        {{formule.name}}
+        <i class="icon ion-chevron-right"></i>	
+      </a>
+    </ul>
+
+    <div class="container">
+
+      <div class="card text-center" ng-hide="maths.length + phys.length + chimie.length + SI.length">
+        Il n'y a rien ici.
+        <br/>
+        Appuyez sur l'étoile pour ajouter une formule à vos favoris.
+      </div>
+
+
+      <!--Fonction qui va récupérer les différentes formules favorites-->
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,31 @@
+<!--Vue 7-->
+
+<ion-view view-title="Mines Saint-Étienne">
+  <ion-content>
+    <ion-refresher
+    on-refresh="doRefresh()">
+  </ion-refresher>
+    <div class="container">
+			<div class="item item-image">
+				<img class="image_matiere" ng-src="img/actu-icon.png"/>
+			</div>
+
+      <div class="card" ng-repeat="item in news">
+        <div class="item item-divider">
+          {{item.title}}
+        </div>
+        <div class="item item-text-wrap">
+          <span ng-bind-html="item.description"></span>
+          <br/><br/>
+          En savoir plus : <a href="#" ng-click="window.open('{{item.link}}', '_system', 'location=yes')">{{item.link}}</a>
+        </div>
+      </div>
+      <div class="card" ng-hide="news.length">
+
+  <div class="item item-text-wrap text-center">
+        Vous devez être connecté au réseau pour voir les news.
+      </div>
+    </div>
+    </div>
+  </ion-content>
+</ion-view>

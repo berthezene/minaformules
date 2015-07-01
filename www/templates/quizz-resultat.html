@@ -1,0 +1,28 @@
+<!--Vue 3-->
+
+<ion-view>
+  <div class="bar bar-stable">
+
+  <div class="h1 title">Résultats</div>
+</div>
+
+    <ion-nav-bar class="bar-stable">
+
+      <ion-nav-buttons side="left">
+        <button ng-click="quizz()" class="button button-stable button-positive button-icon icon ion-chevron-left">Quizz</button>
+      </ion-nav-buttons> <ion-nav-title>
+    Résultats
+    </ion-nav-title>
+  </ion-nav-bar>
+
+	<ion-content padding="true">
+    <div class="item item-image">
+			<img class="image_matiere img-small" ng-src="img/{{shortname}}-icon.png"/>
+		</div>
+		<h1 class="formule titre-{{shortname}}">Résultat : {{note}}/{{total}}</h1>
+
+		<div class="list">
+            <a href="#/app/formule/{{item.question.id}}" class="item item-icon-right item-resultat" ng-repeat="item in resultats"><i class="icon ion-checkmark" ng-show="{{item.correct}}"></i><i class="icon ion-close" ng-hide="{{item.correct}}"></i>{{item.question.name}}</a>
+		</div>
+	</ion-content>
+</ion-view>

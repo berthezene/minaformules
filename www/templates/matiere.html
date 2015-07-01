@@ -1,0 +1,13 @@
+<!--Vue 3-->
+
+<ion-view view-title="{{matiere}}">
+	<ion-content>
+		<div class="item item-image">
+			<img class="image_matiere" ng-src="img/{{shortname}}-icon.png"/>
+		</div>
+		<div class="list">
+			<a href="#/app/categorie/{{categorie.name}}" class="item item-icon-right item-{{shortname}}" ng-repeat="categorie in categories | orderBy: 'name'">{{categorie.name}}
+				<i class="icon ion-chevron-right"></i>
+			</a>
+	</ion-content>
+</ion-view>

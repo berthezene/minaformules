@@ -1,0 +1,10 @@
+{
+  "name": "Appli",
+  "app_id": "1d0ce340",
+  "proxies": [
+    {
+      "path": "/rss",
+      "proxyUrl": "http://www.mines-stetienne.fr/fr/feed/incoming-news"
+    }
+  ]
+}

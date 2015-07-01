@@ -1,0 +1,28 @@
+<!--Vue 3-->
+
+<ion-view view-title="{{name}}" hide-back-button="true">
+	<ion-content>
+		<div class="item item-image">
+			<img class="image_matiere img-small" src="img/Quizz-icon.png"/>
+		</div>
+
+		<div class="list card">
+		<div class="item item-avatar">
+			<img ng-src="img/questionnaire-{{shortname}}-icon.png" style="border-radius: 0;">
+			<h2>{{name}}</h2>
+			<p>Question n<sup>o</sup> {{numero}}</p>
+		</div>
+
+		<div class="item item-body" id="question" mathjax-bind="{{question.question}}">
+
+		</div>
+	</div>
+
+		<div ng-repeat="reponse in reponses">
+
+			<div class="card">
+				<div class="item item-text-wrap" id="reponse" mathjax-bind="{{reponse.reponse}}" ng-click="next(reponse.correct);"></div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

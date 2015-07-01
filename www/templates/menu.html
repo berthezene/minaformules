@@ -1,0 +1,63 @@
+<!--Vue 1-->
+
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons> <ion-nav-title>
+    Mines Saint-Étienne
+    </ion-nav-title>
+
+	</ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable">
+			 <span class="logo"></span>
+    </ion-header-bar>
+    <ion-content>
+			<div class="row row-center">
+				<div class="col col-50">
+					<a class="menu-close button button_menu button_form" href="#/app/Formulaire"><img src="img/formulaire.png"/></a>
+				</div>
+				<div class="col col-50">
+					<a class="menu-close button button_menu button_actu" href="#/app/Actu"><img src="img/actualite.png"/></a>
+				</div>
+			</div>
+			<div class="row row-center">
+				<div class="col col-50">
+					<a class="menu-close button button_menu button_inte" href="#/app/Integrer"><img src="img/integrer.png"></a>
+				</div>
+				<div class="col col-50">
+					<a class="menu-close button button_menu button_visi" href="#" onclick="window.open('https://www.google.com/maps/@45.4227316,4.4087892,3a,75y,232.92h,94.62t/data=%213m5%211e1%213m3%211sc7GbOj-WK1MAAAQZHhf58Q%212e0%213e2%216m1%211e1?hl=fr', '_system', 'location=yes');"><img src="img/visite.png"/></a>
+				</div>
+			</div>
+			<div class="row row-center">
+				<div class="col col-100">
+					<a class="menu-close button button_menu button_apro" href="#/app/Apropos"><img src="img/apropos.png"/></a>
+				</div>
+			</div>
+			<br/>
+			<div class="row row-center">
+				<div class="col col-20 col-offset-10">
+          <img class="button-icon button_social" src="img/facebook.png" onclick="window.open('https://www.facebook.com/MinesSaintEtienne', '_system', 'location=yes');" />
+				</div>
+				<div class="col col-20">
+          <img class="button-icon button_social" src="img/twitter.png" onclick="window.open('https://twitter.com/MINES_StEtienne', '_system', 'location=yes');" />
+				</div>
+				<div class="col col-20">
+          <img class="button-icon button_social" src="img/google.png" onclick="window.open('https://plus.google.com/100231175795290987540', '_system', 'location=yes');" />
+				</div>
+				<div class="col col-20">
+          <img class="button-icon button_social" src="img/linkedin.png" onclick="window.open('https://www.linkedin.com/edu/ecole-nationale-sup%C3%A9rieure-des-mines-de-saint-etienne-12381', '_system', 'location=yes');"/>
+				</div>
+			</div>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

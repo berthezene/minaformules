@@ -1,0 +1,338 @@
+.logo{
+	background: url("../img/logo_emse_original.png") no-repeat scroll 0% 0% / 35px 35px rgba(0, 0, 0, 0);
+	color: #fff;
+	height: 35px;
+	width: 35px;
+}
+
+.button.classes-checked{
+	background-color: rgba(0, 147, 255, 0.37);
+}
+
+.container{
+	margin: 15px 2%;
+}
+
+.container .col-offset-19{
+	margin-left: 19% !important;
+}
+
+.container .col-offset-8-5{
+	margin-left: 8.5%;
+}
+
+.container .row{
+	margin: 0;
+}
+
+a.button.button-block{
+	margin: 0;
+}
+
+
+.image_matiere{
+	height: 100%;
+	width: auto !important;
+}
+
+.image_apropos{
+	margin-top: 15px;
+	height: 75%;
+	width: auto !important;
+}
+
+.image_matiere.img-small{
+	height: 75%;
+	margin-top: 15px;
+}
+
+.item-image{
+	border: 0;
+}
+
+input[type='checkbox']{
+	display: none !important;
+}
+
+.col-50 .button_menu{
+	height: 113.8px;
+	width: 100%;
+	border: 0;
+	margin: 0;
+}
+
+.col-100 .button_menu{
+	height: 56.9px;
+	width: 100%;
+	border: 0;
+}
+
+.button_menu {
+	margin: 0;
+	padding: 0;
+}
+
+.button_menu > img {
+	height: 100%;
+	width: 100%;
+	border: 0;
+	background-color: white;
+
+}
+
+.col-sup{
+	position: relative;
+	float: left;
+	margin: 0.5%;
+}
+
+.col-sup:before{
+	content: "";
+	display: block;
+	padding-top: 29.274%;
+}
+
+.col-spe{
+	position: relative;
+	float: left;
+	margin: 0.5%;
+}
+
+.col-spe:before{
+	content: "";
+	display: block;
+	padding-top: 32.679%;
+}
+
+.button_sup{
+	width: 100%;
+	color: inherit;
+	min-height: 0;
+	border: 0;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color: transparent;
+	padding: 0;
+}
+
+.button_sup img{
+	height: 100%;
+	width: 100%;
+}
+
+.button_spe{
+	width: 100%;
+	color: inherit;
+	min-height: 0;
+	border: 0;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color: transparent;
+	padding: 0;
+}
+
+.button_spe img{
+	height: 100%;
+	width: 100%;
+}
+
+.col-quizz{
+	float: left;
+	position: relative;
+	max-width: 98%;
+	margin: 50px 1% 5% 1%;
+}
+
+.col-quizz:before{
+	content: "";
+	display: block;
+	padding-top: 19.1%; 	/* initial ratio of 1:1*/
+}
+
+.col-matiere{
+	float: left;
+	position: relative;
+	max-width: 48%;
+	margin: 1%;
+}
+
+.col-matiere:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+.button-matiere{
+	width: 100%;
+	border: 0px none;
+	background: none repeat scroll 0% 0% transparent;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	padding: 0;
+	margin: 0;
+}
+
+.button-matiere > img {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/*.button_quiz{
+	background: url("../img/quizz.png") no-repeat scroll 0% 0% / 100% 100% rgba(0, 0, 0, 0);
+}*/
+
+.last-div{
+	color: transparent;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.pane .scroll-content .scroll{
+	height: 100%;
+}
+
+.pane .scroll-content .scroll .item-image{
+	height: 20%;
+}
+
+.img-formule {
+	display: block;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#formule, #question, #reponse, #description {
+	font-size: 20px;
+	word-wrap: normal;
+	max-width: 100%;
+}
+
+/*#description{
+    white-space:nowrap;
+	text-align: left;
+}*/
+
+.item-M{
+	border: 3px solid #EF7D0D;
+	margin: 3px;
+}
+
+.item-M .icon, .titre-M{
+	color: #EF7D0D;
+}
+
+.item-C{
+	border: 3px solid #B2C31C;
+	margin: 3px;
+}
+
+.item-C .icon, .titre-C{
+	color: #B2C31C;
+}
+
+.item-P{
+	border: 3px solid #E7007F;
+	margin: 3px;
+}
+
+.item-P .icon, .titre-P{
+	color: #E7007F;
+}
+
+.item-S{
+	border: 3px solid #20BEEF;
+	margin: 3px;
+}
+
+.item-S .icon, .titre-S{
+	color: #20BEEF;
+}
+
+.item-search{
+	margin: 10px;
+	border-radius: 50px;
+	border-width: 3px;
+	height: 30px;
+}
+
+.item-question{
+	border: 1px solid #572A88;
+	margin: 3px;
+}
+
+.item-resultat{
+	border: 1px solid #572A88;
+	margin: 7px;
+}
+
+
+.formule + ion-scroll{
+	border: 1px solid #572A88;
+}
+
+ion-scroll.question{
+	border: 1px solid #572A88;
+	margin-bottom: 30px;
+}
+
+.item-math{
+	background-color: #EF7D0D;
+}
+
+.item-phys{
+	background-color: #E7007F;
+}
+
+.item-chim{
+	background-color: #B2C31C;
+}
+
+.item-si{
+	background-color: #20BEEF;
+}
+
+.div-error{
+	text-align: center;
+	margin-top: 30px;
+	float: right;
+}
+
+.button-error{
+	font-size: 3em;
+	color: #572A88;
+
+}
+
+.button-error 	.text-error{
+	font-size: 1em;
+}
+
+.good{
+	color: #B2C31C;
+}
+
+.bad{
+	color: transparent;
+}
+
+.MathJaxDisplay {
+	width: 100%;
+}
+
+#description{
+	padding-bottom: 50px;
+}
