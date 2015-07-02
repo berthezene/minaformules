@@ -1,5 +1,5 @@
 // L'emplacement de la base de donnees doit etre indiquee ici
-var urlBDD = "url_bdd_ici";
+var urlBDD = "http://www.emse.fr/minaformules/minaformules_db.json";
 
 var database;var currentMatiere;
 var questions = [];
