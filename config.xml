@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.appli360776" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ionicframework.appli360776" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>MinaFormules</name>
-  <description>&#xD;&#xD;
-        &#xD;&#xD;
-    </description>
+  <description>Minaformules est une mine d’informations dans laquelle chaque étudiant de classe préparatoire scientifique peut consulter des formules. </description>
   <author email="minaformules@emse.fr" href="http://www.mines-stetienne.fr/">&#xD;&#xD;
       Ecole Nationale Superieure des Mines de Saint Etienne&#xD;&#xD;
     </author>
@@ -65,6 +63,8 @@
     <splash src="resources/ios/splash/Default-Portrait~ipad.png" height="1024" width="768"/>
     <splash src="resources/ios/splash/Default@2x~iphone.png" height="960" width="640"/>
     <splash src="resources/ios/splash/Default~iphone.png" height="480" width="320"/>
+  </platform>
+  <platform name="winphone" />
   </platform>
   <icon src="resources/android/icon/drawable-xhdpi-icon.png"/>
   <gap:plugin name="cordova-plugin-email-composer" version="0.8.3" source="npm" />
