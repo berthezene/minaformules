@@ -1,0 +1,23 @@
+<!--Vue 3-->
+
+<ion-view view-title="{{categorie}}">
+	<ion-content>
+		<div class="item item-image">
+			<img class="image_matiere" ng-src="img/{{shortname}}-icon.png"/>
+		</div>
+
+		<div class="list" ng-show="formules.length">
+            <label class="item item-input item-search">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" ng-model="recherche" placeholder="Recherche"/>
+            </label>
+
+            <a href="#/app/formule/{{formule.id}}" class="item item-icon-right item-{{shortname}}" ng-repeat="formule in formules | filter:recherche | orderBy: 'name'">{{formule.name}}
+				<i class="icon ion-chevron-right"></i>
+			</a>
+		</div>
+			<div class="card" ng-hide="formules.length" style="text-align: center;">
+			<strong>Il n'y a rien ici.</strong>
+		</div>
+	</ion-content>
+</ion-view>
