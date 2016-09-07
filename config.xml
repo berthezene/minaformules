@@ -67,7 +67,7 @@
     <splash src="resources/ios/splash/Default~iphone.png" height="480" width="320"/>
   </platform>
   <icon src="resources/android/icon/drawable-xhdpi-icon.png"/>
-  <gap:plugin name="de.appplant.cordova.plugin.email-composer" />
+  <plugin name="de.appplant.cordova.plugin.email-composer" />
   <gap:plugin name="nl.x-services.plugins.toast" version="2.0.2" />
   <plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
   </widget>
